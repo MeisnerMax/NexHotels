@@ -3,7 +3,7 @@ import { company } from "@/lib/company";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nexhotels.de"),
+  metadataBase: new URL(company.website),
   title: {
     default: "NexHotels – Profit Control für inhabergeführte Hotels",
     template: "%s | NexHotels",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Mehr Ergebnis aus dem Umsatz, den Ihr Hotel bereits macht.",
     type: "website",
     locale: "de_DE",
-    url: "https://nexhotels.de",
+    url: company.website,
     siteName: "NexHotels",
   },
   alternates: { canonical: "/" },
@@ -33,9 +33,14 @@ const structuredData = {
   "@type": ["ProfessionalService", "Organization"],
   name: company.brand,
   legalName: company.legalName,
-  url: "https://nexhotels.de",
+  url: company.website,
   email: company.email,
   founder: { "@type": "Person", name: company.owner },
+  parentOrganization: {
+    "@type": "Organization",
+    name: company.parentBrand,
+    url: "https://www.nexgen-consulting.de",
+  },
   address: {
     "@type": "PostalAddress",
     streetAddress: company.street,
