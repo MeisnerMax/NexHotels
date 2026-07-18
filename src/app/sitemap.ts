@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
+import { company } from "@/lib/company";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://nexhotels.de";
+  const base = company.website;
   return [
     { url: base, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
     { url: `${base}/profit-control-check`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
