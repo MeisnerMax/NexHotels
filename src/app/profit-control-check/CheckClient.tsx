@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { Brand } from "@/components/Brand";
 
 const questions = [
   ["Gemeinsamer Monatsabgleich", "PMS, OTA-Abrechnungen, Payment und Bank werden regelmäßig in einer gemeinsamen Sicht abgeglichen."],
@@ -47,10 +48,7 @@ export default function CheckClient({ reference }: { reference: string }) {
     <main className="check-page">
       <header className="site-header check-header">
         <div className="shell nav-wrap">
-          <Link className="brand" href="/" aria-label="NexHotels Startseite">
-            <span className="brand-mark" aria-hidden="true">N</span>
-            <span>NexHotels</span>
-          </Link>
+          <Link href="/" aria-label="NexHotels Startseite"><Brand inverse /></Link>
           <Link className="text-link" href="/">Zur Hauptseite</Link>
         </div>
       </header>

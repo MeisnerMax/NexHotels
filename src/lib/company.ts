@@ -7,6 +7,8 @@ export const company = {
   postalCity: "96450 Coburg",
   email: "kontakt@nexhotels.de",
   website: "https://hotels.nexgen-consulting.de",
+  parentWebsite: "https://nexgen-consulting.de",
+  siblingWebsite: "https://neximmo.nexgen-consulting.de",
   phone: null as string | null,
   taxNumber: null as string | null,
   vatId: null as string | null,

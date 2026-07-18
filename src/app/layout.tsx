@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
+import { Sora, Source_Sans_3 } from "next/font/google";
 import { company } from "@/lib/company";
 import "./globals.css";
+
+const headingFont = Sora({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const bodyFont = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(company.website),
@@ -39,7 +52,7 @@ const structuredData = {
   parentOrganization: {
     "@type": "Organization",
     name: company.parentBrand,
-    url: "https://www.nexgen-consulting.de",
+    url: company.parentWebsite,
   },
   address: {
     "@type": "PostalAddress",
@@ -54,8 +67,9 @@ const structuredData = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de">
+    <html lang="de" className={`${headingFont.variable} ${bodyFont.variable}`}>
       <body>
+        <a className="skip-link" href="#main-content">Zum Inhalt springen</a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

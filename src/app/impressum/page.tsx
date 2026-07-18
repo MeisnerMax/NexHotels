@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Brand } from "@/components/Brand";
 import { company, companyAddress } from "@/lib/company";
 
 export const metadata: Metadata = {
@@ -12,10 +13,7 @@ export default function Impressum() {
     <main className="legal-page">
       <header className="site-header check-header">
         <div className="shell nav-wrap">
-          <Link className="brand" href="/">
-            <span className="brand-mark" aria-hidden="true">N</span>
-            <span>NexHotels</span>
-          </Link>
+          <Link href="/" aria-label="NexHotels Startseite"><Brand inverse /></Link>
           <Link className="text-link" href="/">Zur Hauptseite</Link>
         </div>
       </header>
