@@ -26,12 +26,13 @@ export default function Datenschutz() {
             {company.owner}, handelnd unter {company.brand}<br />
             {companyAddress}<br />
             E-Mail: <a href={`mailto:${company.email}`}>{company.email}</a>
+            {company.phone && (<><br />Telefon: {company.phone}</>)}
           </p>
         </section>
         <section>
           <h2>2. Hosting und technische Protokolldaten</h2>
           <p>
-            Die Website wird über Vercel bereitgestellt. Beim Aufruf können technisch erforderliche Daten wie IP-Adresse, Zeitpunkt, angeforderte Ressource, Browser- und Geräteinformationen sowie Sicherheits- und Fehlerdaten verarbeitet werden. Die Verarbeitung dient der sicheren, stabilen und performanten Bereitstellung der Website und erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
+            Die Website wird über Vercel bereitgestellt. Beim Aufruf können technisch erforderliche Daten wie IP-Adresse, Zeitpunkt, angeforderte Ressource, Browser- und Geräteinformationen sowie Sicherheits- und Fehlerdaten verarbeitet werden. Die Verarbeitung dient der sicheren, stabilen und performanten Bereitstellung der Website und erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Anbieter ist Vercel Inc. (San Francisco, USA); mit Vercel besteht ein Vertrag zur Auftragsverarbeitung. Eine Übermittlung in die USA ist möglich; Vercel ist unter dem EU-US Data Privacy Framework zertifiziert, ergänzend gelten Standardvertragsklauseln. Protokolldaten werden in der Regel nach spätestens 30 Tagen gelöscht.
           </p>
         </section>
         <section>
@@ -43,7 +44,7 @@ export default function Datenschutz() {
         <section>
           <h2>4. Kontaktaufnahme per E-Mail</h2>
           <p>
-            Bei einer Kontaktaufnahme verarbeiten wir die von Ihnen übermittelten Angaben zur Bearbeitung der Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bei vorvertraglichen oder vertraglichen Anliegen und im Übrigen Art. 6 Abs. 1 lit. f DSGVO.
+            Bei einer Kontaktaufnahme verarbeiten wir die von Ihnen übermittelten Angaben zur Bearbeitung der Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bei vorvertraglichen oder vertraglichen Anliegen und im Übrigen Art. 6 Abs. 1 lit. f DSGVO. Die Angaben werden gelöscht, sobald die Anfrage erledigt ist, soweit keine gesetzlichen Aufbewahrungspflichten (z. B. für Geschäftsbriefe) bestehen.
           </p>
         </section>
         <section>
@@ -55,7 +56,7 @@ export default function Datenschutz() {
         <section>
           <h2>6. Ihre Rechte</h2>
           <p>
-            Betroffene Personen haben nach Maßgabe der gesetzlichen Voraussetzungen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Außerdem besteht ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde.
+            Betroffene Personen haben nach Maßgabe der gesetzlichen Voraussetzungen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Außerdem besteht ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde, zuständig ist das Bayerische Landesamt für Datenschutzaufsicht (BayLDA), Promenade 18, 91522 Ansbach.
           </p>
         </section>
       </div>

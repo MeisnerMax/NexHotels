@@ -190,9 +190,9 @@ export default function Home() {
               <div><p className="eyebrow">Founder-led</p><h2>Verantwortung bleibt sichtbar.</h2><p>NexHotels wird von Max Meisner geführt. Die Perspektive verbindet praktische Hotelsteuerung, Kostenkontrolle, Vertragsarbeit und Asset Management.</p></div>
             </div>
             <div className="network-copy reveal">
-              <p className="eyebrow eyebrow-light">Teil von NexGen Consulting</p>
+              <p className="eyebrow eyebrow-light">Eine Marke von NexGen Consulting</p>
               <h2>Spezialisiert im Markt.<br />Verbunden in der Umsetzung.</h2>
-              <p>NexHotels ist ein spezialisiertes Unternehmen im NexGen-Netzwerk. Prozessverständnis, digitale Werkzeuge und wirtschaftliche Steuerung greifen über Branchengrenzen hinweg zusammen.</p>
+              <p>NexHotels ist ein spezialisiertes Angebot von Max Meisner unter der Dachmarke NexGen Consulting. Prozessverständnis, digitale Werkzeuge und wirtschaftliche Steuerung greifen über Branchengrenzen hinweg zusammen.</p>
               <div className="network-links">
                 <a href={company.parentWebsite}><span>NexGen Consulting<small>Digitalisierung & Prozessautomatisierung</small></span><Arrow /></a>
                 <a href={company.siblingWebsite}><span>NexImmo<small>Immobilien Asset Management Software</small></span><Arrow /></a>
@@ -215,7 +215,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="shell">
           <div className="footer-top">
-            <div><Brand inverse /><p>Profit Control für inhabergeführte Hotels.<br />Ein Unternehmen von NexGen Consulting.</p></div>
+            <div><Brand inverse /><p>Profit Control für inhabergeführte Hotels.<br />Ein Angebot von Max Meisner · NexGen Consulting.</p></div>
             <div><span>Leistung</span><a href="#leistung">Profit Leak Audit</a><a href="#prozess">Ablauf</a><Link href="/profit-control-check">Selbstcheck</Link></div>
             <div><span>Netzwerk</span><a href={company.parentWebsite}>NexGen Consulting</a><a href={company.siblingWebsite}>NexImmo</a><a href={`mailto:${company.email}`}>{company.email}</a></div>
             <div><span>Rechtliches</span><Link href="/impressum">Impressum</Link><Link href="/datenschutz">Datenschutz</Link></div>

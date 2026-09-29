@@ -23,19 +23,18 @@ export default function Impressum() {
         <section>
           <h2>Angaben gemäß § 5 DDG</h2>
           <p>
-            {company.owner}<br />
-            handelnd unter {company.brand}<br />
+            {company.owner} (Einzelunternehmen)<br />
+            handelnd unter {company.brand}, einem Angebot von {company.parentBrand}<br />
             {companyAddress}<br />
             Deutschland
           </p>
         </section>
         <section>
           <h2>Kontakt</h2>
-          <p>E-Mail: <a href={`mailto:${company.email}`}>{company.email}</a></p>
-        </section>
-        <section>
-          <h2>Umsatzsteuer</h2>
-          <p>Die Umsatzsteuer-Identifikationsnummer wird ergänzt, sobald sie für die Veröffentlichung vorliegt.</p>
+          <p>
+            E-Mail: <a href={`mailto:${company.email}`}>{company.email}</a>
+            {company.phone && (<><br />Telefon: <a href={`tel:${company.phone.replace(/\s/g, "")}`}>{company.phone}</a></>)}
+          </p>
         </section>
         <section>
           <h2>Verantwortlich für den Inhalt</h2>
@@ -44,7 +43,7 @@ export default function Impressum() {
         <section>
           <h2>Hinweis zur Tätigkeit</h2>
           <p>
-            NexHotels erbringt betriebswirtschaftliche Analysen und operative Profit-Control-Leistungen für Beherbergungsbetriebe. Rechts-, Steuer- und Wirtschaftsprüfungsleistungen sind nicht Bestandteil des Angebots.
+            NexHotels erbringt betriebswirtschaftliche Analysen und operative Profit-Control-Leistungen für Beherbergungsbetriebe. Rechts-, Steuer- und Wirtschaftsprüfungsleistungen sind nicht Bestandteil des Angebots. Das Angebot richtet sich ausschließlich an Unternehmer im Sinne von § 14 BGB.
           </p>
         </section>
       </div>
