@@ -220,7 +220,7 @@ export default function Home() {
             <div><span>Netzwerk</span><a href={company.parentWebsite}>NexGen Consulting</a><a href={company.siblingWebsite}>NexImmo</a><a href={`mailto:${company.email}`}>{company.email}</a></div>
             <div><span>Rechtliches</span><Link href="/impressum">Impressum</Link><Link href="/datenschutz">Datenschutz</Link></div>
           </div>
-          <div className="footer-bottom"><span>© {new Date().getFullYear()} NexHotels. Alle Rechte vorbehalten.</span><span>Made in Coburg · Germany</span></div>
+          <div className="footer-bottom"><span>© {new Date().getFullYear()} {company.legalEntity} · NexHotels. Alle Rechte vorbehalten.</span><span>Made in Coburg · Germany</span></div>
         </div>
       </footer>
     </>
