@@ -23,7 +23,7 @@ export default function Datenschutz() {
         <section>
           <h2>1. Verantwortlicher</h2>
           <p>
-            {company.owner}, handelnd unter {company.brand}<br />
+            {company.legalEntity}, Inhaber {company.owner} (Marke {company.brand})<br />
             {companyAddress}<br />
             E-Mail: <a href={`mailto:${company.email}`}>{company.email}</a>
             {company.phone && (<><br />Telefon: {company.phone}</>)}

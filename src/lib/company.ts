@@ -2,7 +2,9 @@ export const company = {
   owner: "Max Meisner",
   brand: "NexHotels",
   parentBrand: "NexGen Consulting",
-  legalName: "Max Meisner, handelnd unter NexHotels",
+  /** Rechtlicher Name laut Gewerbeanmeldung; NexHotels und NexGen Consulting sind Marken. */
+  legalEntity: "Meisner-Ventures",
+  legalName: "Meisner-Ventures",
   street: "Webergasse 30",
   postalCity: "96450 Coburg",
   email: "kontakt@nexhotels.de",

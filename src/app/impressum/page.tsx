@@ -23,8 +23,9 @@ export default function Impressum() {
         <section>
           <h2>Angaben gemäß § 5 DDG</h2>
           <p>
-            {company.owner} (Einzelunternehmen)<br />
-            handelnd unter {company.brand}, einem Angebot von {company.parentBrand}<br />
+            {company.legalEntity}<br />
+            Inhaber: {company.owner} (Einzelunternehmen)<br />
+            {company.brand} und {company.parentBrand} sind Marken von {company.legalEntity}.<br />
             {companyAddress}<br />
             Deutschland
           </p>
